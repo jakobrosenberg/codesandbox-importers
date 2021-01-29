@@ -176,6 +176,10 @@ export function getTemplate(
     return "preact-cli";
   }
 
+  if (totalDependencies.indexOf("@roxi/routify") > -1) {
+    return "node";
+  }
+  
   if (totalDependencies.indexOf("@sveltech/routify") > -1) {
     return "node";
   }
